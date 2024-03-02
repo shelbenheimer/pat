@@ -1,0 +1,11 @@
+To install the dependencies, please enter the following command while actively in the 'src' directory.
+
+This software was designed for educational purposes, and I do not condone for it to be used maliciously. I also decline any responsibility for the misuse of this software. Any illegal or repercussive actions that are carried out must be entirely accounted for by the individual doing so.
+
+[*] pip install -r requirements.txt --break-system-packages
+
+Please ensure that you install all of the dependencies within the requirements.txt file for full functionality.
+
+DO NOT run the installation process as root; otherwise you may face issues when executing from a non-sudo account.
+
+Use the --break-system-packages flag if you are running Python in a protected environment.
