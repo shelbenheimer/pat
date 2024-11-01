@@ -7,8 +7,14 @@ import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
-DEFAULT_SERVER = 'smtp.gmail.com'
-DEFAULT_PORT = 587
+OUTLOOK_SERVER = 'smtp-mail.outlook.com'
+GMAIL_SERVER = 'smtp.gmail.com'
+
+OUTLOOK_PORT = 587
+GMAIL_PORT = 587
+
+DEFAULT_SERVER = GMAIL_SERVER
+DEFAULT_PORT = GMAIL_PORT
 DEFAULT_TIMEOUT = 15
 DEFAULT_TLS = True
 
