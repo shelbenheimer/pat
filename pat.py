@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# All software written by Tomas. (https://github.com/shelbenheimer/ata-shell)
+# All software written by Tomas. (https://github.com/shelbenheimer)
 
 import os
 import sys
@@ -18,6 +18,7 @@ DEFAULT_PORT = GMAIL_PORT
 DEFAULT_TIMEOUT = 15
 DEFAULT_TLS = True
 
+BANNER = "Software written by Tomas. Available on GitHub. (https://github.com/shelbenheimer)"
 REQUIRED = [ '-s', '-r', '-p', '-t', '-f' ]
 
 class Post:
@@ -94,10 +95,13 @@ try:
 		print("Flag criteria not met.")
 		sys.exit()
 
+	print(BANNER)
+
 	post.ParseArgs(sys.argv)
 	post.EstablishConnection()
 
 	mail = post.ConstructMail()
 	post.SendMail(mail)
+	print("Sent!")
 except KeyboardInterrupt:
 	print("Caught interruption. Exiting gracefully.")
